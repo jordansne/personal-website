@@ -1,0 +1,30 @@
+body {
+    background-color: #333333; /* #404040; */
+    font-family: "verdana";
+    width: 60%;
+    min-width: 580px;
+    margin: auto;
+    margin-top: 180px;
+    padding: 5px;
+    color: white;
+}
+
+h1 {
+    font-size: 65px;
+    display: inline-block;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: block;
+    text-align: left;
+    font-family: "Trebuchet MS";
+}

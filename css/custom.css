@@ -1,0 +1,118 @@
+/*
+* ======================================================
+* ===================== Content CSS ====================
+* ======================================================
+*/
+
+.content {
+    color: white;
+    padding: 15px;
+}
+
+/*
+* ======================================================
+* =================== Header Bar CSS ===================
+* ======================================================
+*/
+
+/* Entire header content */
+.header {
+    background-color: rgba(220, 220, 220, .95);
+    width: 100%;
+    position: fixed;
+    padding-bottom: 15px;
+    top: 0px;
+    left: 0px;
+    line-height: 25px;
+    color: black;
+}
+
+/* Contents of the navbar */
+.header_content {
+    width: 60%;
+    min-width: 580px;
+    margin: auto;
+}
+
+/* The "Jordan Sne" in the header */
+.header_title {
+    line-height: 0px;
+}
+
+/*
+* ======================================================
+* ================ Header Nav Bar CSS ==================
+* ======================================================
+*/
+
+.nav_element {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* Vertial line seperator between header nav links */
+span.vl {
+    border-left: 1px solid #858585;
+    border-right: 1px solid #858585;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr.nav_hr {
+    padding: 1px;
+    background-color: #858585;
+    border: 0;
+}
+
+/*
+* ======================================================
+* ================= Project Menu CSS ===================
+* ======================================================
+*/
+
+.menu_element {
+    display: block;
+    text-decoration: none;
+    margin: 2px;
+    padding: 10px;
+    padding-left: 8px;
+    line-height: 20px;
+    min-width: 100px;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu_content {
+    display: none;
+    position: absolute;
+    margin-top: 8px;
+
+    border-left: 2px solid #858585;
+    border-bottom: 2px solid #858585;
+    border-right: 2px solid #858585;
+}
+
+.menu:hover .menu_content {
+    display: block;
+    background-color: white;
+}
+
+/*
+* ======================================================
+* ====================== Misc CSS ======================
+* ======================================================
+*/
+
+/* Custom blue colour */
+.blue {
+    color: #454e9e;
+}
+
+.hoverable:hover {
+    background-color: rgba(69, 78, 158, 0.6);
+}

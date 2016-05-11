@@ -7,6 +7,7 @@
 .content {
     color: white;
     padding: 15px;
+    text-align: justify;
 }
 
 /*
@@ -66,6 +67,11 @@ hr.nav_hr {
     border: 0;
 }
 
+ul.nav {
+    padding: 0px;
+    margin: 0px;
+}
+
 /*
 * ======================================================
 * ================= Project Menu CSS ===================
@@ -77,9 +83,9 @@ hr.nav_hr {
     text-decoration: none;
     margin: 2px;
     padding: 10px;
-    padding-left: 8px;
+    padding-left: 13px;
     line-height: 20px;
-    min-width: 100px;
+    min-width: 105px;
 }
 
 .menu {
@@ -91,6 +97,7 @@ hr.nav_hr {
     display: none;
     position: absolute;
     margin-top: 8px;
+    margin-left: -2px;
 
     border-left: 2px solid #858585;
     border-bottom: 2px solid #858585;

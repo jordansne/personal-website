@@ -10,6 +10,24 @@
     text-align: justify;
 }
 
+.contact {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+ul.contact {
+    padding: 0px;
+}
+
+li.contact {
+    padding: 8px;
+}
+
 /*
 * ======================================================
 * =================== Header Bar CSS ===================

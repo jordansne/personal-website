@@ -1,10 +1,11 @@
 body {
     background-color: #333333; /* #404040; */
     font-family: "verdana";
-    width: 60%;
-    min-width: 580px;
+    font-size: 14px;
+    width: 65%;
+    min-width: 630px;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 160px;
     padding: 5px;
     color: white;
 }
@@ -12,6 +13,10 @@ body {
 h1 {
     font-size: 65px;
     display: inline-block;
+}
+
+h2 {
+    line-height: 200%;
 }
 
 li {

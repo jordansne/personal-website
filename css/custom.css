@@ -37,18 +37,18 @@ li.contact {
 /* Entire header content */
 .header {
     background-color: rgba(220, 220, 220, .95);
-    width: 100%;
+    width: 92%;
     position: fixed;
     padding-bottom: 15px;
     top: 0px;
-    left: 0px;
-    line-height: 25px;
+    left: 4%;
+    line-height: 24px;
     color: black;
 }
 
 /* Contents of the navbar */
 .header_content {
-    width: 60%;
+    width: 70%;
     min-width: 580px;
     margin: auto;
 }
@@ -63,6 +63,10 @@ li.contact {
 * ================ Header Nav Bar CSS ==================
 * ======================================================
 */
+
+.navbar {
+    font-size: 16px;
+}
 
 .nav_element {
     text-decoration: none;
@@ -79,15 +83,27 @@ span.vl {
     padding-bottom: 5px;
 }
 
+/* Horizon line seperator around the nav bar */
 hr.nav_hr {
     padding: 1px;
     background-color: #858585;
     border: 0;
 }
 
-ul.nav {
+nav ul {
     padding: 0px;
     margin: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+    background-color: rgba(69, 78, 158, 0.6);
 }
 
 /*
@@ -100,10 +116,10 @@ ul.nav {
     display: block;
     text-decoration: none;
     margin: 2px;
-    padding: 10px;
+    padding: 7px;
     padding-left: 13px;
     line-height: 20px;
-    min-width: 105px;
+    min-width: 95px;
 }
 
 .menu {

@@ -5,7 +5,7 @@ body {
     width: 65%;
     min-width: 630px;
     margin: auto;
-    margin-top: 160px;
+    margin-top: 130px;
     padding: 5px;
     color: white;
 }
@@ -26,10 +26,4 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-nav {
-    display: block;
-    text-align: left;
-    font-family: "Trebuchet MS";
 }

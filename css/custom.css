@@ -10,21 +10,16 @@
     text-align: justify;
 }
 
-.contact {
-    text-align: center;
-}
-
 .footer {
     text-align: center;
     font-size: 14px;
-    color: gray;
 }
 
 ul.contact {
     padding: 0px;
 }
 
-li.contact {
+ul.contact li {
     padding: 8px;
 }
 
@@ -38,24 +33,21 @@ li.contact {
 .header {
     background-color: rgba(220, 220, 220, .95);
     width: 92%;
+    min-width: 630px;
     position: fixed;
-    padding-bottom: 15px;
     top: 0px;
     left: 4%;
     line-height: 24px;
     color: black;
 }
 
-/* Contents of the navbar */
-.header_content {
-    width: 70%;
-    min-width: 580px;
-    margin: auto;
-}
-
 /* The "Jordan Sne" in the header */
 .header_title {
     line-height: 0px;
+    width: 70%;
+    min-width: 580px;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 /*
@@ -64,83 +56,35 @@ li.contact {
 * ======================================================
 */
 
+/* Full width navbar */
 .navbar {
     font-size: 16px;
+    background-color: #9b9b9b;
 }
 
-.nav_element {
-    text-decoration: none;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-/* Vertial line seperator between header nav links */
-span.vl {
-    border-left: 1px solid #858585;
-    border-right: 1px solid #858585;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-/* Horizon line seperator around the nav bar */
-hr.nav_hr {
-    padding: 1px;
-    background-color: #858585;
-    border: 0;
-}
-
+/* Link List */
 nav ul {
+    font-family: "Trebuchet MS";
     padding: 0px;
-    margin: 0px;
+    width: 70%;
+    min-width: 580px;
+    margin: auto;
+    list-style-type: none;
+    overflow-x: hidden;
 }
 
-nav a {
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
     text-decoration: none;
-    margin: 5px;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 nav a:hover {
     background-color: rgba(69, 78, 158, 0.6);
-}
-
-/*
-* ======================================================
-* ================= Project Menu CSS ===================
-* ======================================================
-*/
-
-.menu_element {
-    display: block;
-    text-decoration: none;
-    margin: 2px;
-    padding: 7px;
-    padding-left: 13px;
-    line-height: 20px;
-    min-width: 95px;
-}
-
-.menu {
-    position: relative;
-    display: inline-block;
-}
-
-.menu_content {
-    display: none;
-    position: absolute;
-    margin-top: 8px;
-    margin-left: -2px;
-
-    border-left: 2px solid #858585;
-    border-bottom: 2px solid #858585;
-    border-right: 2px solid #858585;
-}
-
-.menu:hover .menu_content {
-    display: block;
-    background-color: white;
 }
 
 /*
@@ -152,8 +96,4 @@ nav a:hover {
 /* Custom blue colour */
 .blue {
     color: #454e9e;
-}
-
-.hoverable:hover {
-    background-color: rgba(69, 78, 158, 0.6);
 }

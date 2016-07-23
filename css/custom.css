@@ -5,14 +5,15 @@
 */
 
 .content {
-    color: white;
     padding: 15px;
+
+    color: white;
     text-align: justify;
 }
 
 .footer {
-    text-align: center;
     font-size: 14px;
+    text-align: center;
 }
 
 ul.contact {
@@ -31,23 +32,25 @@ ul.contact li {
 
 /* Entire header content */
 .header {
-    background-color: rgba(220, 220, 220, .95);
-    width: 92%;
+    width: 84%;
     min-width: 630px;
     position: fixed;
     top: 0px;
-    left: 4%;
-    line-height: 24px;
+    left: 8%;
+
     color: black;
+    background-color: rgba(220, 220, 220, .95);
+    line-height: 24px;
 }
 
 /* The "Jordan Sne" in the header */
 .header_title {
-    line-height: 0px;
-    width: 70%;
-    min-width: 580px;
+    width: 77%;
+    min-width: 630px;
     margin: auto;
     margin-bottom: 5px;
+
+    line-height: 0px;
 }
 
 /*
@@ -64,13 +67,15 @@ ul.contact li {
 
 /* Link List */
 nav ul {
-    font-family: "Trebuchet MS";
     padding: 0px;
-    width: 70%;
-    min-width: 580px;
+    width: 77%;
+    min-width: 630px;
     margin: auto;
+
     list-style-type: none;
     overflow-x: hidden;
+
+    font-family: "Trebuchet MS";
 }
 
 nav ul li {
@@ -78,9 +83,11 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
-    text-decoration: none;
     padding: 10px;
+    display: block;
+    
+    text-decoration: none;
+    cursor: pointer;
 }
 
 nav a:hover {

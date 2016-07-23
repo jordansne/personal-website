@@ -1,13 +1,14 @@
 body {
-    background-color: #333333; /* #404040; */
-    font-family: "verdana";
-    font-size: 14px;
     width: 65%;
     min-width: 630px;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 105px;
     padding: 5px;
+
     color: white;
+    background-color: #333333;
+    font-family: "verdana";
+    font-size: 13px;
 }
 
 h1 {
@@ -16,6 +17,10 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 5px;
+    margin-top: 25px;
+    
+    color: #a6abd8;
     line-height: 200%;
 }
 

@@ -18,10 +18,11 @@
 
 ul.contact {
     padding: 0px;
+    text-align: center;
 }
 
 ul.contact li {
-    padding: 8px;
+    padding: 25px;
 }
 
 /*
@@ -85,7 +86,7 @@ nav ul li {
 nav ul li a {
     padding: 10px;
     display: block;
-    
+
     text-decoration: none;
     cursor: pointer;
 }

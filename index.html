@@ -10,25 +10,50 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <script src="js/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#top_link').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 750);
+            });
+
+            $('#about_link').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#about').offset().top - 145
+                }, 750);
+            });
+
+            $('#projects_link').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#projects').offset().top - 145
+                }, 750);
+            });
+
+            $('#contact_link').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#contact').offset().top - 145
+                }, 750);
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="header">
         <div class="header_content">
             <div class="header_title">
-                <h1><a href="index.html">
-                    <span class="blue">J</span>ordan <span class="blue">S</span>ne
-                </a></h1>
-            <span style="color: #575757;">Software Developer</span></div>
+                <h1><a style="cursor: pointer;" id="top_link"><span class="blue">J</span>ordan <span class="blue">S</span>ne</a></h1>
+            </div>
 
             <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="about.html">About Me</a>
-                        <li><a href="projects.html">Projects</a>
-                        <li><a href="http://github.com/jordansne" target="_blank">Github</a>
-                        <li><a href="contact.html">Contact</a>
-                    </ul>
-                </nav>
+                <nav><ul>
+                    <li><a id="about_link">About Me</a>
+                    <li><a id="projects_link">Projects</a>
+                    <li><a href="http://github.com/jordansne" target="_blank">Github</a>
+                    <li><a id="contact_link">Contact</a>
+                </ul></nav>
             </div>
         </div>
     </div>

@@ -1,3 +1,0 @@
-- Fix resizing issues of top header
-- Add about me page
-- Add contact me page

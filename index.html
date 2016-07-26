@@ -12,33 +12,7 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 
     <script src="js/jquery-2.2.3.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#top_link').click(function() {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 750);
-            });
-
-            $('#about_link').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#about').offset().top - 145
-                }, 750);
-            });
-
-            $('#projects_link').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#projects').offset().top - 145
-                }, 750);
-            });
-
-            $('#contact_link').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#contact').offset().top - 145
-                }, 750);
-            });
-        });
-    </script>
+    <script src="js/animations.js"></script>
 </head>
 <body>
     <div class="header">

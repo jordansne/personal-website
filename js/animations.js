@@ -1,57 +1,37 @@
-$(document).ready(function() {
-    registerScrollEvents();
-});
+class Content {
 
-function registerScrollEvents() {
-    var page = $('html, body');
+    constructor(contentID) {
+        this.contentID = '#' + contentID;
+        this.contentLinkID = this.contentID + '_link';
+    }
 
-    // Events for click links in the nav bar
-    $('#top_link').click(function() {
-        page.animate({
-            scrollTop: 0
-        }, 750, function() {
-            page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
+    registerScroll() {
+        const page = $('html, body');
+        const self = this;
+
+        $(self.contentLinkID).click(function() {
+            page.animate({
+                scrollTop: $(self.contentID).offset().top - 145
+            }, 750, function() {
+                page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
+            });
+
+            page.on("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll", function() {
+                page.stop();
+            });
         });
-
-        page.on("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll", function() {
-            page.stop();
-        });
-    });
-
-    $('#about_link').click(function() {
-        page.animate({
-            scrollTop: $('#about').offset().top - 145
-        }, 750, function() {
-            page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
-        });
-
-        page.on("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll", function() {
-            page.stop();
-        });
-    });
-
-    $('#projects_link').click(function() {
-        page.animate({
-            scrollTop: $('#projects').offset().top - 145
-        }, 750, function() {
-            page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
-        });
-
-        page.on("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll", function() {
-            page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
-        });
-    });
-
-    $('#contact_link').click(function() {
-        page.animate({
-            scrollTop: $('#contact').offset().top - 145
-        }, 750, function() {
-            page.off("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll");
-        });
-
-        page.on("scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll", function() {
-            page.stop();
-        });
-    });
+    }
 
 }
+
+$(document).ready(function() {
+    const headerContent = new Content('top')
+    const aboutContent = new Content('about')
+    const projectsContent = new Content('projects');
+    const contactContent = new Content('contact');
+
+    headerContent.registerScroll();
+    aboutContent.registerScroll();
+    projectsContent.registerScroll();
+    contactContent.registerScroll();
+});

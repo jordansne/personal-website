@@ -29,6 +29,7 @@ class Content {
                 scrollTop: $(self.contentID).offset().top - 145
             }, 750, function() {
                 page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
+                page.trigger('clicklink');
             });
 
             page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
@@ -63,7 +64,7 @@ class Content {
         const self = this;
         const page = $('html, body');
 
-        page.on('ready scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', function() {
+        page.on('ready scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll clicklink', function() {
             if (self.isInView(self.contentID)) {
                 $(self.contentID).trigger('show');
             }

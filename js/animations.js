@@ -103,12 +103,12 @@ $(document).ready(function() {
     const contactContent = new Content('contact', null);
     const projectsContent = new Content('projects', contactContent);
     const aboutContent = new Content('about', projectsContent);
-    const activeContent = new Content('active', aboutContent);
+    // const activeContent = new Content('active', aboutContent);
 
     // Ensure page is at top before starting show animations
     page.animate({
         scrollTop: 0
     }, 300, function() {
-        activeContent.readyToShow();
+        aboutContent.readyToShow();
     });
 });

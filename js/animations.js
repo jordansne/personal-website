@@ -28,11 +28,11 @@ class Content {
             page.animate({
                 scrollTop: $(self.contentID).offset().top - 145
             }, 750, function() {
-                page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
+                page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
                 page.trigger('clicklink');
             });
 
-            page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
+            page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
         });
     }
 
@@ -64,7 +64,7 @@ class Content {
         const self = this;
         const page = $('html, body');
 
-        page.on('ready scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll clicklink', function() {
+        page.on('ready scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize clicklink', function() {
             if (self.isInView(self.contentID)) {
                 $(self.contentID).trigger('show');
             }
@@ -94,10 +94,10 @@ $(document).ready(function() {
         page.animate({
             scrollTop: 0
         }, 750, function() {
-            page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
+            page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
         });
 
-        page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll', stopFunction);
+        page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
     });
 
     const contactContent = new Content('contact', null);

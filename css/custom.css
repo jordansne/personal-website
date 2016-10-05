@@ -12,24 +12,23 @@
 */
 
 .content {
-    padding: 15px;
-
     color: white;
     text-align: justify;
+
+    width: 69.5%;
+    margin: 0px auto;
+}
+
+.content_sub {
+    padding: 5px 0px;
 }
 
 .footer {
     font-size: 14px;
     text-align: center;
-}
 
-ul.contact {
-    padding: 0px;
-    text-align: center;
-}
-
-ul.contact li {
-    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 /*
@@ -38,77 +37,84 @@ ul.contact li {
 * ======================================================
 */
 
-/* Entire header content */
+/* Entire top of website, including abstract image */
 .header {
-    width: 84%;
-    min-width: 630px;
-    position: fixed;
-    top: 0px;
-    left: 8%;
-
-    color: black;
-    background-color: rgba(220, 220, 220, .95);
+    font-size: 18px;
+    color: #a0a0a0;
     line-height: 24px;
+
+    background-image: url("../image/header.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Set to window height. */
+    height: 100vh;
 }
 
-/* The "Jordan Sne" in the header */
+/* "Jordan Sne | Software Developer" */
 .header_title {
-    width: 77%;
-    min-width: 630px;
-    margin: auto;
-    margin-bottom: 5px;
+    font-size: 65px;
+    color: white;
 
-    line-height: 0px;
+    display: inline-block;
+    margin-top: 50vh;
+    margin-left: 15%;
+}
+
+/* Vertical Line */
+.header hr {
+    font-size: 45px;
+    border-color: #a0a0a0;
+    width: 1px;
+
+    display: inline;
+    margin: 0px 10px;
 }
 
 /*
 * ======================================================
-* ================ Header Nav Bar CSS ==================
+* ==================== Nav Bar CSS =====================
 * ======================================================
 */
 
-/* Full width navbar */
+/* Full width static navigation bar */
 .navbar {
     font-size: 16px;
-    background-color: #9b9b9b;
+    color: #a0a0a0;
+    background-color: #282828;
+
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
 }
 
-/* Link List */
+/* Navigation bar links */
 nav ul {
-    padding: 0px;
-    width: 77%;
-    min-width: 630px;
-    margin: auto;
-
-    list-style-type: none;
-    overflow-x: hidden;
-
     font-family: "Trebuchet MS";
+    list-style: none;
+
+    margin: 0px 0px 0px 12.7%;
+    padding: 0px;
+
+    overflow-x: hidden;
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
+    padding: 10px 0px;
 }
 
 nav ul li a {
-    padding: 10px;
-    display: block;
-
     text-decoration: none;
     cursor: pointer;
+
+    padding: 10px 25px;
 }
 
-nav a:hover {
+/* Navigation bar rollover */
+nav li:hover {
     background-color: rgba(69, 78, 158, 0.6);
-}
-
-/*
-* ======================================================
-* ====================== Misc CSS ======================
-* ======================================================
-*/
-
-/* Custom blue colour */
-.blue {
-    color: #454e9e;
 }

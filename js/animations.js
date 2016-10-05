@@ -81,7 +81,7 @@ class Content {
         const viewBottom = viewTop + $(window).height();
 
         // TODO Adjust for top header offset.
-        return (viewTop + 75 < contentBottom && viewBottom - 75 > contentTop);
+        return (viewTop + 150 < contentBottom && viewBottom - 150 > contentTop);
     }
 }
 

@@ -1,7 +1,8 @@
 /*
- * animations.js
+ * animations.js - jordansne.com
  *
- * @author Jordan Sne
+ * Author: Jordan Sne
+ * License: MIT
  */
 
 /* jshint esversion: 6 */

@@ -88,23 +88,9 @@ class Content {
 $(document).ready(function() {
     const page = $('html, body');
 
-    // Click header to scroll to top
-    $('#top_link').click(function() {
-        const stopFunction = function() { page.stop(); };
-
-        page.animate({
-            scrollTop: 0
-        }, 750, function() {
-            page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
-        });
-
-        page.one('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
-    });
-
     const contactContent = new Content('contact', null);
     const projectsContent = new Content('projects', contactContent);
     const aboutContent = new Content('about', projectsContent);
-    // const activeContent = new Content('active', aboutContent);
 
     // Ensure page is at top before starting show animations
     page.animate({

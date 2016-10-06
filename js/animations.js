@@ -98,4 +98,10 @@ $(document).ready(function() {
     }, 300, function() {
         aboutContent.readyToShow();
     });
+
+    // Fade in "Jordan Sne | Software Developer"
+    $('#header_animate').css("opacity", 0);
+    $('#header_animate').animate({
+        opacity: 1
+    }, 1750);
 });

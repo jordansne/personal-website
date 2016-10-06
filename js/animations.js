@@ -80,7 +80,6 @@ class Content {
         const viewTop = $(window).scrollTop();
         const viewBottom = viewTop + $(window).height();
 
-        // TODO Adjust for top header offset.
         return (viewTop + 150 < contentBottom && viewBottom - 150 > contentTop);
     }
 }

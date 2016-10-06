@@ -99,9 +99,17 @@ $(document).ready(function() {
         aboutContent.readyToShow();
     });
 
-    // Fade in "Jordan Sne | Software Developer"
+    // Fade in "Jordan Sne |"
     $('#header_animate').css("opacity", 0);
     $('#header_animate').animate({
         opacity: 1
     }, 1750);
+
+    // Animate in "Software Developer"
+    $('#header_sub_animate').css("left", '100px');
+    $('#header_sub_animate').css("opacity", 0);
+    $('#header_sub_animate').animate({
+        left: '0px',
+        opacity: 1
+    }, 1500);
 });

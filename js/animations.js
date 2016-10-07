@@ -98,11 +98,15 @@ $(document).ready(function() {
         aboutContent.readyToShow();
     });
 
-    // Fade in "Jordan Sne |"
-    $('#header_animate').css("opacity", 0);
+    // Fade in "Jordan Sne |", and fade in arrow when finished.
+    $('#header_animate, .arrow').css("opacity", 0);
     $('#header_animate').animate({
         opacity: 1
-    }, 1750);
+    }, 1750, function() {
+        $('.arrow').animate({
+            opacity: 1
+        }, 1000);
+    });
 
     // Animate in "Software Developer"
     $('#header_sub_animate').css("left", '100px');

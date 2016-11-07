@@ -5,8 +5,6 @@
  * License: MIT
  */
 
-/* jshint esversion: 6 */
-
 class Content {
 
     constructor(contentID, nextContent) {

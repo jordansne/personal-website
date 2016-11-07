@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#icons {
+    text-align: center;
+    margin: 120px 0px;
+}
+
+#icons i {
+	margin: 0px 3%;
+}

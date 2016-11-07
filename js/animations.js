@@ -88,7 +88,8 @@ $(document).ready(function() {
     const page = $('html, body');
 
     const contactContent = new Content('contact', null);
-    const projectsContent = new Content('projects', contactContent);
+    const webPortfolioContent = new Content('web_portfolio', contactContent);
+    const projectsContent = new Content('projects', webPortfolioContent);
     const aboutContent = new Content('about', projectsContent);
 
     // Ensure page is at top before starting show animations

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#offers {
+    margin: 40px auto;
+    padding: 35px;
+    width: 40%;  
+    
+    border-style: solid;
+    border-width: thick;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    
+    background-color: #F1F1F1;
+}
+
+#offers ul {
+    padding: 0px;   
+}
+
+#offers ul li {
+    color: #636363;
+    
+    margin: 10px 0px; 
+    padding: 0px;  
+    font-size: 20px;
+    
+    text-align: center;
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px; 
+    font-size: 40px;  
+}

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* ========================================== */
+/* ============ Home Page Logo ============== */
+/* ========================================== */
+
+.title {
+    font-family: 'Exo 2', sans-serif;
+	font-size: 80px;
+}
+
+table#title {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+table#title td#icons {
+	text-align: right;
+}
+
+table#title i {
+	margin: 0px 7px;
+}
+
+/* ========================================== */
+/* ============ Home Page Table ============= */
+/* ========================================== */
+
+p {
+    font-size: 18px;
+}
+
+table#content {
+    color: #636363;
+
+	width: 95%;
+    margin: 0px auto;
+
+    border-collapse: collapse;
+    border: none;
+}
+
+table#content tr {
+	height: 350px;
+    margin: 0px auto;
+
+	border: none;
+}
+
+table#content td {
+    padding: 20px 0px;
+	border: none;
+}
+
+h2 {
+    color: black;
+    margin-top: 0px;
+}
+
+table#content td.image {
+    text-align: center;
+}
+
+table#content img {
+    width: 85%;
+    max-width: 400px;
+    height: auto;
+}

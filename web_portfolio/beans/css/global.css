@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* ========================================== */
+/* =========== Default HTML Tags ============ */
+/* ========================================== */
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+		
+	padding: 0px;	
+	margin: 0px;
+	
+	background: 
+		linear-gradient(
+			rgba(125,125,125,0.5),
+			rgba(125,125,125,0.5)
+		),
+		url(../image/background.jpg);
+	background-attachment: fixed;
+    
+    min-width: 830px;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+h1 {
+    color: black; 
+    margin-top: 10px;
+}
+
+/* ========================================== */
+/* =========== Home Page Content ============ */
+/* ========================================== */
+
+.content {
+    background-color: #D2D2D2;
+    
+	width: 80%;
+    margin: 30px auto;
+	padding: 25px;
+}
+
+/* ========================================== */
+/* ============ Navigation Bar ============== */
+/* ========================================== */
+
+nav {
+    color: #D9D9D9;
+    background-color: #262626;
+    opacity: 0.9;
+    
+	top: 0px;
+	left: 0px;
+    
+	width: 80%;
+    height: 64px;
+    margin: 0px;	
+	padding: 0px 10%;
+}
+
+nav ul {
+    top: 0px;
+    right: 10%;
+    position: absolute;
+    margin: 0px;
+	padding: 0px;
+    
+    display: inline;
+	list-style: none;    
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	display: block;
+	padding: 23px 20px;
+    
+	text-align: center;
+}
+
+nav ul li:hover {
+	background: linear-gradient(
+		rgba(0,0,0,0.00),
+		rgba(230,230,230,0.1),
+		rgba(230,230,230,0.5)
+	);	
+	cursor: pointer;
+}
+
+/* ========================================== */
+/* =========== Miscellaneous CSS ============ */
+/* ========================================== */
+
+sup {
+    font-size: 40%;
+}
+
+sub {
+    font-size: 40%;
+}
+
+#copyright {
+    color: #7D7D7D; 
+    font-style: italic;
+    font-size: 14px;
+    
+    margin-top: 40px;
+    text-align: center;
+}

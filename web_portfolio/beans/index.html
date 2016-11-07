@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <title>Beans Coffee Shop</title>
+
+    <meta charset="UTF-8">
+
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript">
+        // DREAMWEAVER CODE
+        function MM_swapImgRestore() { //v3.0
+          var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+        }
+
+        function MM_preloadImages() { //v3.0
+          var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+            if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_findObj(n, d) { //v4.01
+          var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+          if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+          for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+          var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+           if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+    </script>
+</head>
+<body onLoad="MM_preloadImages('image/coffeeshop_resized_rollover.jpg', 'image/coffeeevent_resized_rollover.jpg',
+'image/coffeedesk_resized_rollover.jpg')">
+    <header>
+        <nav class="navbar">
+            <a href="./index.html"><img src="./image/logo.png" alt="Beans, Coffee Shop"/></a>
+
+            <ul>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./gallery0.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <table id="title"><tbody>
+            <tr>
+                <td width="70p%">
+                    <div class="title">Beans<sup>&copy;</sup></div>
+                    &nbsp;&nbsp;<span style="color: #7D7D7D;">Coffee Shop</span>
+                </td>
+                <td id="icons" width="30%">
+                    <a href="https://facebook.com/_beanscoffee" target="_blank"><i class="fa fa-facebook-square fa-2x"
+                    aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/_beanscoffee" target="_blank"><i class="fa fa-twitter-square fa-2x"
+                    aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/_beanscoffee" target="_blank"><i class="fa fa-instagram fa-2x"
+                    aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        </tbody></table>
+
+        <table id="content"><tbody>
+            <tr>
+                <td width="50%"><h2>Relax. Get Comfortable.</h2>
+                    <p>Enjoy the quiet and open atmosphere of a classic coffee shop, with a modern twist.</p>
+                </td>
+                <td class="image" width="50%">
+                    <a href="./gallery0.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('img1', '', 'image/coffeedesk_resized_rollover.jpg', 1)"><img
+                    src="image/coffeedesk_resized.jpg" alt="" width="367" height="245" id="img1"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="image" width="50%">
+                    <a href="./menu.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('img2', '', 'image/coffeeshop_resized_rollover.jpg', 1)"><img
+                    src="image/coffeeshop_resized.jpg" alt="" width="367" height="245" id="img2"></a>
+                </td>
+                <td width="50%">
+                    <h2>Variety of Options.</h2>
+                    <p>Coffee, lattes, cappuccinos, snacks and more. You want it, we have it.</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <h2>We cater to your events.</h2>
+                    <p>Whatever event you want to plan, we'd be honoured to provide the quality of service you're looking
+                    for.</p>
+                </td>
+                <td class="image" width="50%">
+                    <a href="./services.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('img3', '', 'image/coffeeevent_resized_rollover.jpg', 1)"><img
+                    src="image/coffeeevent_resized.jpg" alt="" width="367" height="245" id="img3"></a>
+                </td>
+            </tr>
+        </tbody></table>
+
+        <div id="copyright">
+            &copy; 2016 Beans Coffee
+        </div>
+    </div>
+</body>
+</html>

@@ -98,11 +98,11 @@ $(document).ready(function() {
     });
 
     // Fade in "Jordan Sne |", and fade in arrow when finished.
-    $('#header_animate, .arrow').css("opacity", 0);
+    $('#header_animate, #arrow').css("opacity", 0);
     $('#header_animate').animate({
         opacity: 1
     }, 1750, function() {
-        $('.arrow').animate({
+        $('#arrow').animate({
             opacity: 1
         }, 1000);
     });

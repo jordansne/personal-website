@@ -12,7 +12,7 @@
  */
 
 /* Entire top of website, including abstract image */
-.header {
+header {
     font-size: 18px;
     color: #a0a0a0;
     line-height: 24px;
@@ -23,12 +23,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* Set to window height. */
+    /* Set to window height */
     height: 100vh;
 }
 
 /* "Jordan Sne | Software Developer" */
-.header_title {
+header #title {
     font-size: 65px;
     color: white;
 
@@ -37,8 +37,13 @@
     margin-left: 15%;
 }
 
+/* "Software Developer" in the front title */
+#header_sub_animate {
+    position: relative;
+}
+
 /* Vertical Line */
-.header hr {
+header hr {
     font-size: 45px;
     border-color: #a0a0a0;
     width: 1px;
@@ -47,7 +52,8 @@
     margin: 0px 10px;
 }
 
-.arrow {
+/* Down pointing arrow */
+#arrow {
     position: absolute;
     top: calc(100vh - 60px);
     left: calc(50% - 25px);
@@ -60,7 +66,7 @@
  */
 
 /* Full width static navigation bar */
-.navbar {
+nav {
     font-size: 16px;
     color: #a0a0a0;
     background-color: #282828;
@@ -136,7 +142,9 @@ section hr {
 }
 
 footer {
+    color: gray;
     font-size: 14px;
+    font-style: italic;
     text-align: center;
 
     margin-top: 50px;

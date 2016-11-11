@@ -21,7 +21,10 @@
 
 .content_sub {
     padding: 5px 0px;
-    margin: 25px 0px;
+    margin: 75px 0px;
+
+    border-left: solid 2px white;
+    padding-left: 40px;
 }
 
 .content_sub h2 {
@@ -29,6 +32,13 @@
     line-height: 200%;
 
     margin: 0px 0px 5px 0px;
+}
+
+.content_sub hr {
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: white;
 }
 
 .footer {

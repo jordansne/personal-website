@@ -6,7 +6,7 @@
 
 .title {
     font-family: 'Exo 2', sans-serif;
-	font-size: 80px;
+    font-size: 80px;
 }
 
 table#title {
@@ -15,11 +15,11 @@ table#title {
 }
 
 table#title td#icons {
-	text-align: right;
+    text-align: right;
 }
 
 table#title i {
-	margin: 0px 7px;
+    margin: 0px 7px;
 }
 
 /* ========================================== */
@@ -33,7 +33,7 @@ p {
 table#content {
     color: #636363;
 
-	width: 95%;
+    width: 95%;
     margin: 0px auto;
 
     border-collapse: collapse;
@@ -41,15 +41,15 @@ table#content {
 }
 
 table#content tr {
-	height: 350px;
+    height: 350px;
     margin: 0px auto;
 
-	border: none;
+    border: none;
 }
 
 table#content td {
     padding: 20px 0px;
-	border: none;
+    border: none;
 }
 
 h2 {

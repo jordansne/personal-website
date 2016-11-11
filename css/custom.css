@@ -24,6 +24,13 @@
     margin: 25px 0px;
 }
 
+.content_sub h2 {
+    color: #a6abd8;
+    line-height: 200%;
+
+    margin: 0px 0px 5px 0px;
+}
+
 .footer {
     font-size: 14px;
     text-align: center;
@@ -112,11 +119,10 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 10px 0px;
 }
 
 nav ul li a {
-    text-decoration: none;
+    display: block;
     cursor: pointer;
 
     padding: 10px 25px;

@@ -25,7 +25,7 @@ class Content {
 
         $(self.contentLinkID).click(function() {
             page.animate({
-                scrollTop: $(self.contentID).offset().top - 50
+                scrollTop: $(self.contentID).offset().top - 75
             }, 750, function() {
                 page.off('scroll mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize', stopFunction);
                 page.trigger('clicklink');

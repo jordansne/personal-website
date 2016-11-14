@@ -121,7 +121,7 @@ article {
 
 section {
     padding: 5px 0px;
-    margin: 75px 0px;
+    margin: 100px 0px;
 
     border-left: solid 2px white;
     padding-left: 40px;
@@ -131,7 +131,9 @@ section h2 {
     color: #a6abd8;
     line-height: 200%;
 
-    margin: 0px 0px 5px 0px;
+    font-size: 30px;
+
+    margin: 0px 0px 20px 0px;
 }
 
 section hr {

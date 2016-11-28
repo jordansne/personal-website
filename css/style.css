@@ -151,6 +151,22 @@ section hr {
     background-color: white;
 }
 
+section#contact #list {
+    margin: 30px auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section#contact #list .contact {
+    text-align: center;
+}
+
+section#contact h3 {
+    font-style: bold;
+}
+
 footer {
     color: gray;
     font-size: 14px;

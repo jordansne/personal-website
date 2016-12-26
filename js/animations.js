@@ -70,20 +70,9 @@ function setEmail() {
     const name = "jordan" + "sne";
     const suffix = ".c" + "om";
 
-    const emailDiv = document.getElementById("email");
-
-    for (let i = 0; i < emailDiv.childNodes.length; i++) {
-        const child = emailDiv.childNodes[i];
-        if (child.nodeName === 'A') {
-            child.setAttribute("href", "mailto:" + name + "@" + domain + suffix);
-
-            for (let j = 0; j < child.childNodes.length; j++) {
-                const innerChild = child.childNodes[j];
-                if (innerChild.nodeName === 'H3') {
-                    innerChild.innerHTML = name + "@" + domain + suffix;
-                }
-            }
-        }
+    const emailLinks = document.getElementsByClassName("email");
+    for (let i = 0; i < emailLinks.length; i++) {
+        emailLinks[i].setAttribute("href", "mailto:" + name + "@" + domain + suffix);
     }
 }
 

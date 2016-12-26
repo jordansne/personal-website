@@ -76,7 +76,7 @@ function setEmail() {
     }
 }
 
-$(document).ready(function() {
+$(document).ready(() => {
     setEmail();
 
     const sectionAnimations = [];
@@ -96,7 +96,7 @@ $(document).ready(function() {
     $('#header_animate, #arrow').css("opacity", 0);
     $('#header_animate').animate({
         opacity: 1
-    }, 1750, function() {
+    }, 1750, () => {
         $('#arrow').animate({
             opacity: 1
         }, 1000);

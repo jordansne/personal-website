@@ -167,14 +167,26 @@ section#contact h3 {
     font-style: bold;
 }
 
+section#contact .email {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 footer {
     color: gray;
+    background-color: #2b2b2b;
+
     font-size: 14px;
     font-style: italic;
     text-align: center;
 
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+
+footer i {
+    padding: 10px 10px;
+    text-decoration: none;
 }
 
 /*

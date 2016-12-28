@@ -163,10 +163,6 @@ section#contact #list .contact {
     text-align: center;
 }
 
-section#contact h3 {
-    font-style: bold;
-}
-
 section#contact .email {
     font-weight: bold;
     text-decoration: underline;

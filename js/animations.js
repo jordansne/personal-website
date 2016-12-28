@@ -9,9 +9,15 @@ const PAGE_SCROLL_EVENTS = 'scrollend mousedown mousewheel wheel keyup touchmove
 
 class SectionAnimation {
 
-    constructor(contentID) {
+    constructor(contentID, animateCallback) {
         this.contentID = '#' + contentID;
         this.contentLinkID = this.contentID + '_link';
+
+        if (arguments.length == 2) {
+            this.animateCallback = animateCallback;
+        } else {
+            this.animateCallback = null;
+        }
 
         $(this.contentID).css("opacity", 0);
         this.addScrollEvent();
@@ -42,7 +48,11 @@ class SectionAnimation {
         $(this.contentID).one('show', () => {
             $(this.contentID).animate({
                 opacity: 1
-            }, 400);
+            }, 400, () => {
+                if (this.animateCallback !== null) {
+                    this.animateCallback();
+                }
+            });
         });
 
         page.on(PAGE_SCROLL_EVENTS + ' clicklink', () => {

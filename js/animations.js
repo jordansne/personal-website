@@ -86,6 +86,18 @@ function setEmail() {
     }
 }
 
+function fadeInSkills() {
+    const ANIMATION_SPEED = 750;
+
+    $("ul.skill").each(function() {
+        $("ul.skill li").each(function(index) {
+            $(this).delay(150 * index).animate({
+                opacity: 1
+            }, ANIMATION_SPEED);
+        });
+    });
+}
+
 $(document).ready(() => {
     setEmail();
 
@@ -94,8 +106,15 @@ $(document).ready(() => {
     // Add all sections to the animation array
     const sections = document.getElementsByTagName("section");
     for (let i = 0; i < sections.length; i++) {
-        sectionAnimations.push(new SectionAnimation(sections[i].id));
+        if (sections[i].id === "about") {
+            sectionAnimations.push(new SectionAnimation(sections[i].id, fadeInSkills));
+        } else {
+            sectionAnimations.push(new SectionAnimation(sections[i].id));
+        }
     }
+
+    // Initialize skill fade in animations
+    $("ul.skill li").css("opacity", 0);
 
     // Ensure page is at top before starting show animations (in case of refresh)
     $('html, body').animate({

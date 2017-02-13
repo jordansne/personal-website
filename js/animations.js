@@ -89,12 +89,10 @@ function setEmail() {
 function fadeInSkills() {
     const ANIMATION_SPEED = 750;
 
-    $("ul.skill").each(function() {
-        $("ul.skill li").each(function(index) {
-            $(this).delay(150 * index).animate({
-                opacity: 1
-            }, ANIMATION_SPEED);
-        });
+    $("ul.skill li").each(function(index) {
+        $(this).delay(150 * index).animate({
+            opacity: 1
+        }, ANIMATION_SPEED);
     });
 }
 

@@ -229,6 +229,7 @@ body {
     font-size: 15px;
 
     margin: auto;
+    min-width: 925px;
 }
 
 a {

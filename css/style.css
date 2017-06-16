@@ -155,16 +155,30 @@ section hr {
     background-color: white;
 }
 
+section#about div#skillbox {
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+section#about div#skillbox h4 {
+    color: #999999;
+    width: 85px;
+    display: inline-block;
+}
+
 section#about ul.skill {
-    display: block;
     margin: 8px 0px;
     padding-left: 0px;
+    display: inline-block;
 }
 
 section#about ul.skill li {
+    background-color: #717070;
     display: inline-block;
     padding: 10px;
-    background-color: #717070;
+    border-radius: 1px;
 }
 
 section#contact #list {

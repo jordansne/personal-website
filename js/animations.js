@@ -1,8 +1,6 @@
 /*
  * animations.js - jordansne.com
- *
  * Author: Jordan Sne
- * License: MIT
  */
 
 const PAGE_SCROLL_EVENTS = 'scrollend mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize';

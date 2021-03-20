@@ -6,6 +6,8 @@
 const $ = require('jquery');
 
 $(document).ready(() => {
+    document.getElementById('copyright_year').innerText = new Date().getFullYear();
+
     const page = $('html, body');
 
     // Ensure page is at top before starting show animations (in case of refresh)

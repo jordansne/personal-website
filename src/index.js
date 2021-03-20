@@ -3,6 +3,8 @@
  * Author: Jordan Sne
  */
 
+const $ = require('jquery');
+
 const PAGE_SCROLL_EVENTS = 'scrollend mousedown mousewheel wheel keyup touchmove DOMMouseScroll resize';
 
 class SectionAnimation {
